@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
+@font-face {
+    font-family: GoodTimes;
+    src: url(good-times-rg.otf);
+}
+
 * {
     font-family: 'DM Sans', sans-serif;
     box-sizing: border-box;
@@ -103,6 +108,14 @@ ul a {
     padding: 1rem;
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+.cards__box--vab {
+    background-image: url(portada-vab.png);
+}
+
+.cards__box--encadenado {
+    background-image: url(portada-encadenado.png);
 }
 
 .cards__box--tomar-impulso {
@@ -210,12 +223,15 @@ ul a {
 }
 
 .lanzamientos h2 {
+    font-family: 'GoodTimes', sans-serif;
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
     font-size: 3rem;
     text-transform: uppercase;
-    background-color: #00000012;
+    background-color: #c200c2;
+    color: #FFFFFF;
+    text-shadow: .3rem .3rem #0f0f0f;
 }
 
 .lanzamientos__img {
@@ -231,21 +247,26 @@ ul a {
     opacity: .8;
 }
 
-@media (max-width: 700px) { 
+.lanzamientos__container {
+    text-align: center;
+    margin-top: 2.4rem;
+}
+
+@media (max-width: 700px) {
     .header .header__profile {
         width: 14rem;
         margin-bottom: 1.2rem;
         padding-right: 3rem;
         margin-left: 3rem;
     }
-    
+
     .header .header__description--title {
         font-size: 3rem;
     }
 
     .cards .cards__box {
         margin: 1.4rem 0;
-    }    
+    }
 
     .cards {
         background-color: #3C63D3;
@@ -264,4 +285,63 @@ ul a {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+}
+
+
+.header__description--redes .links--instagram {
+    background-image: url(instagram--white.svg);
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+    width: 1.6rem;
+    background-size: contain;
+}
+
+.header__description--redes .links--twitter {
+    background-image: url(twitter--white.png);
+    background-repeat: no-repeat;
+    width: 1.6rem;
+    text-indent: -99999px;
+    background-size: contain;
+}
+
+.header__description--redes .links--tiktok {
+    background-image: url(tiktok--white.png);
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+    width: 1.6rem;
+    text-indent: -99999px;
+    background-size: contain;
+}
+
+.header__description--redes .links--spotify {
+    background-image: url(spotify--white.svg);
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+    width: 1.6rem;
+    background-size: contain;
+}
+
+.header__description--redes .links--youtube {
+    background-image: url(youtube--white.svg);
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+    width: 1.6rem;
+    background-size: contain;
+}
+
+.header__description--redes .links--twitch {
+    background-image: url(twitch--white.png);
+    background-repeat: no-repeat;
+    width: 1.6rem;
+    text-indent: -99999px;
+    background-size: contain;
+}
+
+
+.header__description--redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    margin-top: 1.4rem;
 }
