@@ -52,6 +52,7 @@ body {
 }
 
 .header__description .header__description--title {
+    font-family: 'GoodTimes', sans-serif;
     font-size: 6rem;
     text-align: center;
     text-transform: uppercase;
@@ -219,7 +220,7 @@ ul a {
 }
 
 .lanzamientos {
-    background-color: #FFFFFF;
+    background-color: #c200c2;
 }
 
 .lanzamientos h2 {
@@ -229,7 +230,6 @@ ul a {
     text-align: center;
     font-size: 3rem;
     text-transform: uppercase;
-    background-color: #c200c2;
     color: #FFFFFF;
     text-shadow: .3rem .3rem #0f0f0f;
 }
@@ -249,10 +249,19 @@ ul a {
 
 .lanzamientos__container {
     text-align: center;
-    margin-top: 2.4rem;
+    padding-bottom: 2.4rem;
+}
+
+.lanzamientos__container--iframe {
+    width: 56rem;
+    height: 31.5rem;
 }
 
 @media (max-width: 700px) {
+    body {
+        background-color: #FFFFFF;
+    }
+
     .header .header__profile {
         width: 14rem;
         margin-bottom: 1.2rem;
@@ -285,6 +294,19 @@ ul a {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+
+    .lanzamientos__container {
+        padding-bottom: 1.2rem;
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+        margin: 0;
+    }
+
+    .lanzamientos__container--iframe {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 
